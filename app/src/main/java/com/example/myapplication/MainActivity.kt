@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         binding  = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.cadastrar.setOnClickListener{
+        binding.CadastrarLivro.setOnClickListener{
             val i = Intent(this, CadastrarLivro::class.java)
             activityLauncher.launch(i)
         }
