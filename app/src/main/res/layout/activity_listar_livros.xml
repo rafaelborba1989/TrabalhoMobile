@@ -13,10 +13,10 @@
         tools:context=".ListarLivros">
 
         <TextView
-            android:id="@+id/textViewTituloListar"
+            android:id="@+id/textViewNomeListar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Titulo:"
+            android:text="Nome:"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.091"
@@ -34,7 +34,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.091"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTituloListar"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNomeListar"
             app:layout_constraintVertical_bias="0.457" />
 
         <TextView
@@ -67,11 +67,11 @@
             android:id="@+id/textViewTituloLivroListar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/textViewTituloListar"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNomeListar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.165"
-            app:layout_constraintStart_toEndOf="@+id/textViewTituloListar"
-            app:layout_constraintTop_toTopOf="@+id/textViewTituloListar"
+            app:layout_constraintStart_toEndOf="@+id/textViewNomeListar"
+            app:layout_constraintTop_toTopOf="@+id/textViewNomeListar"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -96,17 +96,6 @@
             app:layout_constraintTop_toTopOf="@+id/textViewAnoListar"
             app:layout_constraintVertical_bias="0.0" />
 
-        <RatingBar
-            android:id="@+id/ratingBarLivroListar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textViewAvaliaçãoListar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toEndOf="@+id/textViewAvaliaçãoListar"
-            app:layout_constraintTop_toTopOf="@+id/textViewAvaliaçãoListar" />
-
         <Button
             android:id="@+id/buttonProximo"
             android:layout_width="wrap_content"
@@ -114,19 +103,33 @@
             android:text="Proximo"
             app:layout_constraintBottom_toBottomOf="@+id/buttonAnterior"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.679"
             app:layout_constraintStart_toEndOf="@+id/buttonAnterior"
-            app:layout_constraintTop_toTopOf="@+id/buttonAnterior" />
+            app:layout_constraintTop_toTopOf="@+id/buttonAnterior"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/buttonAnterior"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="288dp"
             android:text="Anterior"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintHorizontal_bias="0.234"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBarLivroListar"
-            app:layout_constraintVertical_bias="0.32" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewNotaListar" />
+
+        <TextView
+            android:id="@+id/textViewNotaListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAvaliaçãoListar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toEndOf="@+id/textViewAvaliaçãoListar"
+            app:layout_constraintTop_toTopOf="@+id/textViewAvaliaçãoListar"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

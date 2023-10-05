@@ -7,9 +7,10 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.databinding.DataBindingUtil
 import androidx.room.Room
-import androidx.lifecycle.ViewModelProvider
+import com.example.livros.ListarLivros
 import com.example.myapplication.dataBase.AppDatabase
 import com.example.myapplication.databinding.ActivityMainBinding
+import ufrn.br.meuslivros.CadastrarLivro
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,12 +34,12 @@ class MainActivity : AppCompatActivity() {
 
         binding  = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.CadastrarLivro.setOnClickListener{
+        binding.buttonCadastrarLivro.setOnClickListener{
             val i = Intent(this, CadastrarLivro::class.java)
             activityLauncher.launch(i)
         }
 
-        binding.listar.setOnClickListener{
+        binding.buttonListar.setOnClickListener{
             val i = Intent(this, ListarLivros::class.java)
             activityLauncher.launch(i)
         }

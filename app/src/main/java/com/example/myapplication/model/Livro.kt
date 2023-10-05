@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class Livro(
+class  Livro(
     //nome, autor, ano, nota
     var nome: String,
     var autor: String,

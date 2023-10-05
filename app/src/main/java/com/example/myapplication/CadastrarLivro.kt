@@ -15,7 +15,8 @@ class CadastrarLivro : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_cadastrar_livro)
+        binding = ActivityCadastrarLivroBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
